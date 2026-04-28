@@ -3,16 +3,6 @@
 This is a solution to the [Recipe page on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 Frontend Mentor challenges help improve frontend skills by building realistic UI components.
 
-### 10. Upload assets
-
-Put fonts to `src/fonts/` and content images to `src/images`.
-
-### 11. Add preview image
-
-```
-./preview.png
-```
-
 ## Table of contents
 
 - [Overview](#overview)
