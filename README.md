@@ -3,10 +3,6 @@
 This is a solution to the [Recipe page on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 Frontend Mentor challenges help improve frontend skills by building realistic UI components.
 
-### 8. Update docs
-
-Put design files and style guide in docs directory.
-
 ### 9. Update favicons
 
 Upload favicons to public directory (realfavicongenerator.net is recommended).
