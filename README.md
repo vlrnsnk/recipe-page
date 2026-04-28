@@ -1,60 +1,7 @@
-# Frontend Mentor - {{PROJECT_NAME}} solution
+# Frontend Mentor - Recipe page solution
 
-This is a solution to the [{{CHALLENGE_NAME}} on Frontend Mentor]({{CHALLENGE_URL}}).
+This is a solution to the [Recipe page on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 Frontend Mentor challenges help improve frontend skills by building realistic UI components.
-
-## 🚀 Using this template
-
-### 1. Create a new project
-
-Click **"Use this template"** on GitHub and create a new repository.
-
-### 2. Update project metadata
-
-#### In `package.json`
-
-```json
-"name": "{{PROJECT_NAME}}"
-```
-
-### 3. Update Vite base path (for GitHub Pages)
-
-If using static base:
-
-```js
-base: "/{{REPO_NAME}}/",
-```
-
-If using dynamic config (recommended), no change needed.
-
-### 4. Update README
-
-Replace all placeholders:
-
-- {{PROJECT_NAME}}
-- {{CHALLENGE_NAME}}
-- {{CHALLENGE_URL}}
-- {{SOLUTION_URL}}
-- {{LIVE_URL}}
-
-### 5. Add preview image
-
-Replace:
-
-```
-./preview.png
-```
-
-### 6. Update links
-
-- Solution URL: {{SOLUTION_URL}}
-- Live Site URL: {{LIVE_URL}}
-
-### 7. Update dependencies (optional)
-
-```bash
-npx npm-check-updates -u
-```
 
 ### 8. Update docs
 
@@ -69,9 +16,11 @@ Create og-image.png after the project is ready for ease of sharing.
 
 Put fonts to `src/fonts/` and content images to `src/images`.
 
-### 11. Enable GitHub Pages deploy
+### 11. Add preview image
 
-After creating repo: Settings → Pages → Source → GitHub Actions.
+```
+./preview.png
+```
 
 ## Table of contents
 
@@ -96,10 +45,7 @@ After creating repo: Settings → Pages → Source → GitHub Actions.
 
 ### The challenge
 
-Users should be able to:
-
-- {{CHALLENGE_REQUIREMENT_1}}
-- {{CHALLENGE_REQUIREMENT_2}}
+- Focus on semantic HTML
 
 ### Preview
 
@@ -107,8 +53,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo]({{SOLUTION_URL}})
-- Live Site URL: [Live Site]({{LIVE_URL}})
+- Solution URL: [GitHub Repo](https://github.com/vlrnsnk/recipe-page)
+- Live Site URL: [Live Site](https://vlrnsnk.github.io/recipe-page/)
 
 ## Features
 
@@ -139,12 +85,6 @@ Users should be able to:
 - {{LEARNING_2}}
 - {{LEARNING_3}}
 
-Example:
-
-```scss
-@include abstracts.transition(background-color, color);
-```
-
 ## Setup
 
 ### Installation
@@ -169,16 +109,18 @@ npm run preview
 ### Linting
 
 ```bash
-npm run lint
+npm run lint:scss
+npm run lint:html
 ```
 
 This project uses Stylelint + EditorConfig + Husky pre-commit hooks
 to ensure consistent code formatting before commits.
 
-### Fix SCSS issues:
+### Fix linting issues:
 
 ```bash
-npm run lint:fix
+npm run lint:scss:fix
+npm run lint:html:fix
 ```
 
 ## Deployment

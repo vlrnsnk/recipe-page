@@ -5,5 +5,5 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     emptyOutDir: true,
   },
-  base: mode === 'production' ? '/{{REPO_NAME}}/' : '/',
+  base: mode === 'production' ? '/recipe-page/' : '/',
 }));
