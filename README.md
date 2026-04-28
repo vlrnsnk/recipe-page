@@ -3,11 +3,6 @@
 This is a solution to the [Recipe page on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 Frontend Mentor challenges help improve frontend skills by building realistic UI components.
 
-### 9. Update favicons
-
-Upload favicons to public directory (realfavicongenerator.net is recommended).
-Create og-image.png after the project is ready for ease of sharing.
-
 ### 10. Upload assets
 
 Put fonts to `src/fonts/` and content images to `src/images`.

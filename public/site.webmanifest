@@ -1,6 +1,6 @@
 {
-  "name": "Template",
-  "short_name": "Template",
+  "name": "Recipe Page",
+  "short_name": "Recipe Page",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
