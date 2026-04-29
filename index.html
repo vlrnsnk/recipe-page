@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="/src/scss/main.scss" />
     <meta property="og:image" content="https://vlrnsnk.github.io/recipe-page/og-image.png" />
   </head>
-  <body>
-    <main class="main">
+  <body class="page">
+    <main class="page__content">
       <article class="recipe">
         <header class="recipe__header">
           <figure class="recipe__figure">
@@ -25,6 +25,7 @@
               alt="Folded omelette on a plate with herbs"
             />
           </figure>
+
           <h1 class="recipe__title">Simple Omelette Recipe</h1>
           <p class="recipe__description">
             An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
@@ -33,90 +34,86 @@
           </p>
         </header>
 
-        <section class="recipe__section preparation">
-          <h2 class="preparation__title">Preparation time</h2>
-          <ul class="preparation__list">
-            <li class="preparation__item">
-              <span class="preparation__label">Total:</span> Approximately 10 minutes
+        <section class="recipe__section recipe__section--preparation">
+          <h2 class="recipe__section-title recipe__section-title--preparation">Preparation time</h2>
+          <ul class="recipe__list">
+            <li class="recipe__item">
+              <span class="recipe__label">Total:</span> Approximately 10 minutes
             </li>
-            <li class="preparation__item">
-              <span class="preparation__label">Preparation:</span> 5 minutes
-            </li>
-            <li class="preparation__item">
-              <span class="preparation__label">Cooking:</span> 5 minutes
-            </li>
+            <li class="recipe__item"><span class="recipe__label">Preparation:</span> 5 minutes</li>
+            <li class="recipe__item"><span class="recipe__label">Cooking:</span> 5 minutes</li>
           </ul>
         </section>
 
-        <section class="recipe__section ingredients">
-          <h2 class="ingredients__title">Ingredients</h2>
-          <ul class="ingredients__list">
-            <li class="ingredients__item">2-3 large eggs</li>
-            <li class="ingredients__item">Salt, to taste</li>
-            <li class="ingredients__item">Pepper, to taste</li>
-            <li class="ingredients__item">1 tablespoon of butter or oil</li>
-            <li class="ingredients__item">
+        <section class="recipe__section recipe__section--ingredients">
+          <h2 class="recipe__section-title">Ingredients</h2>
+          <ul class="recipe__list">
+            <li class="recipe__item">2-3 large eggs</li>
+            <li class="recipe__item">Salt, to taste</li>
+            <li class="recipe__item">Pepper, to taste</li>
+            <li class="recipe__item">1 tablespoon of butter or oil</li>
+            <li class="recipe__item">
               Optional fillings: cheese, diced vegetables, cooked meats, herbs
             </li>
           </ul>
         </section>
 
-        <section class="recipe__section instructions">
-          <h2 class="instructions__title">Instructions</h2>
-          <ol class="instructions__list">
-            <li class="instructions__item">
-              <span class="instructions__label">Beat the eggs</span>: In a bowl, beat the eggs with
-              a pinch of salt and pepper until they are well mixed. You can add a tablespoon of
-              water or milk for a fluffier texture.
+        <section class="recipe__section recipe__section--instructions">
+          <h2 class="recipe__section-title">Instructions</h2>
+          <ol class="recipe__list recipe__list--ordered">
+            <li class="recipe__item">
+              <span class="recipe__label">Beat the eggs</span>: In a bowl, beat the eggs with a
+              pinch of salt and pepper until they are well mixed. You can add a tablespoon of water
+              or milk for a fluffier texture.
             </li>
-            <li class="instructions__item">
-              <span class="instructions__label">Heat the pan</span>: Place a non-stick frying pan
-              over medium heat and add butter or oil.
+            <li class="recipe__item">
+              <span class="recipe__label">Heat the pan</span>: Place a non-stick frying pan over
+              medium heat and add butter or oil.
             </li>
-            <li class="instructions__item">
-              <span class="instructions__label">Cook the omelette</span>: Once the butter is melted
-              and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the
-              surface.
+            <li class="recipe__item">
+              <span class="recipe__label">Cook the omelette</span>: Once the butter is melted and
+              bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
             </li>
-            <li class="instructions__item">
-              <span class="instructions__label">Add fillings (optional)</span>: When the eggs begin
-              to set at the edges but are still slightly runny in the middle, sprinkle your chosen
-              fillings over one half of the omelette.
+            <li class="recipe__item">
+              <span class="recipe__label">Add fillings (optional)</span>: When the eggs begin to set
+              at the edges but are still slightly runny in the middle, sprinkle your chosen fillings
+              over one half of the omelette.
             </li>
-            <li class="instructions__item">
-              <span class="instructions__label">Fold and serve</span>: As the omelette continues to
-              cook, carefully lift one edge and fold it over the fillings. Let it cook for another
-              minute, then slide it onto a plate.
+            <li class="recipe__item">
+              <span class="recipe__label">Fold and serve</span>: As the omelette continues to cook,
+              carefully lift one edge and fold it over the fillings. Let it cook for another minute,
+              then slide it onto a plate.
             </li>
-            <li class="instructions__item">
-              <span class="instructions__label">Enjoy</span>: Serve hot, with additional salt and
-              pepper if needed.
+            <li class="recipe__item">
+              <span class="recipe__label">Enjoy</span>: Serve hot, with additional salt and pepper
+              if needed.
             </li>
           </ol>
         </section>
 
-        <section class="recipe__section nutrition">
-          <h2 class="nutrition__title">Nutrition</h2>
-          <table class="nutrition__table">
-            <caption class="nutrition__caption">
+        <section class="recipe__section recipe__section--nutrition">
+          <h2 class="recipe__section-title">Nutrition</h2>
+
+          <table class="recipe__table">
+            <caption class="recipe__caption">
               Nutritional values per serving without additional fillings
             </caption>
             <tbody>
-              <tr class="nutrition__row">
-                <th scope="row" class="nutrition__name">Calories</th>
-                <td class="nutrition__value">277kcal</td>
+              <tr class="recipe__row">
+                <th scope="row" class="recipe__cell recipe__cell--label">Calories</th>
+                <td class="recipe__cell recipe__cell--value">277kcal</td>
               </tr>
-              <tr class="nutrition__row">
-                <th scope="row" class="nutrition__name">Carbs</th>
-                <td class="nutrition__value">0g</td>
+              <tr class="recipe__row">
+                <th scope="row" class="recipe__cell recipe__cell--label">Carbs</th>
+                <td class="recipe__cell recipe__cell--value">0g</td>
               </tr>
-              <tr class="nutrition__row">
-                <th scope="row" class="nutrition__name">Protein</th>
-                <td class="nutrition__value">20g</td>
+              <tr class="recipe__row">
+                <th scope="row" class="recipe__cell recipe__cell--label">Protein</th>
+                <td class="recipe__cell recipe__cell--value">20g</td>
               </tr>
-              <tr class="nutrition__row">
-                <th scope="row" class="nutrition__name">Fat</th>
-                <td class="nutrition__value">22g</td>
+              <tr class="recipe__row">
+                <th scope="row" class="recipe__cell recipe__cell--label">Fat</th>
+                <td class="recipe__cell recipe__cell--value">22g</td>
               </tr>
             </tbody>
           </table>
