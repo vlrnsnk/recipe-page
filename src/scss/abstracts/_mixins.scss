@@ -2,11 +2,32 @@
 @use 'sass:list';
 
 /* Typography utility */
-@mixin text($size, $weight, $line-height: normal, $letter-spacing: normal) {
-  font-size: $size;
-  font-weight: $weight;
+@mixin text($font-family, $font-size, $font-weight, $line-height, $letter-spacing) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
   line-height: $line-height;
   letter-spacing: $letter-spacing;
+}
+
+@mixin text-preset-1() {
+  @include text(abstracts.$font-young-serif, 2.5rem, 400, 1, 0);
+}
+
+@mixin text-preset-2() {
+  @include text(abstracts.$font-young-serif, 1.75rem, 400, 1, 0);
+}
+
+@mixin text-preset-3() {
+  @include text(abstracts.$font-outfit, 1.25rem, 600, 1, 0);
+}
+
+@mixin text-preset-4() {
+  @include text(abstracts.$font-outfit, 1rem, 400, 1.5, 0);
+}
+
+@mixin text-preset-4-bold() {
+  @include text(abstracts.$font-outfit, 1rem, 700, 1.5, 0);
 }
 
 /* Transitions */
