@@ -1,5 +1,6 @@
 /* Text presets */
 @use 'sass:list';
+@use 'variables';
 
 /* Typography utility */
 @mixin text($font-family, $font-size, $font-weight, $line-height, $letter-spacing) {
@@ -11,23 +12,23 @@
 }
 
 @mixin text-preset-1() {
-  @include text(abstracts.$font-young-serif, 2.5rem, 400, 1, 0);
+  @include text(variables.$font-young-serif, 2.5rem, 400, 1, 0);
 }
 
 @mixin text-preset-2() {
-  @include text(abstracts.$font-young-serif, 1.75rem, 400, 1, 0);
+  @include text(variables.$font-young-serif, 1.75rem, 400, 1, 0);
 }
 
 @mixin text-preset-3() {
-  @include text(abstracts.$font-outfit, 1.25rem, 600, 1, 0);
+  @include text(variables.$font-outfit, 1.25rem, 600, 1, 0);
 }
 
 @mixin text-preset-4() {
-  @include text(abstracts.$font-outfit, 1rem, 400, 1.5, 0);
+  @include text(variables.$font-outfit, 1rem, 400, 1.5, 0);
 }
 
 @mixin text-preset-4-bold() {
-  @include text(abstracts.$font-outfit, 1rem, 700, 1.5, 0);
+  @include text(variables.$font-outfit, 1rem, 700, 1.5, 0);
 }
 
 /* Transitions */

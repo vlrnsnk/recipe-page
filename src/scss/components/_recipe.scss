@@ -1,0 +1,84 @@
+@use '../abstracts' as abstracts;
+
+.recipe {
+  padding: abstracts.$spacing-500 abstracts.$spacing-400;
+  background-color: abstracts.$color-white;
+
+  &__header {
+    margin-bottom: abstracts.$spacing-400;
+  }
+
+  &__image-wrapper {
+    margin-left: 0 - abstracts.$spacing-400;
+    margin-right: 0 - abstracts.$spacing-400;
+    margin-top: 0 - abstracts.$spacing-500;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    &-wrapper {
+      margin-bottom: abstracts.$spacing-500;
+    }
+  }
+
+  &__title {
+    @include abstracts.text-preset-1;
+
+    margin: 0;
+    margin-bottom: abstracts.$spacing-300;
+    font-size: 2.25rem;
+    color: abstracts.$color-stone-900;
+  }
+
+  &__description {
+    @include abstracts.text-preset-4;
+  }
+
+  &__section {
+    margin-bottom: abstracts.$spacing-400;
+
+    &-title {
+      @include abstracts.text-preset-2;
+
+      color: abstracts.$color-brown-800;
+
+      &--highlight {
+        @include abstracts.text-preset-3;
+
+        margin-bottom: abstracts.$spacing-200;
+        color: abstracts.$color-rose-800;
+      }
+    }
+
+    &--highlight {
+      padding: abstracts.$spacing-300;
+      background-color: abstracts.$color-rose-50;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: abstracts.$spacing-100;
+    color: abstracts.$color-stone-600;
+    list-style-position: outside;
+    padding-left: abstracts.$spacing-300;
+
+    &-item {
+      @include abstracts.text-preset-4;
+
+      padding-left: abstracts.$spacing-200;
+
+      &::marker {
+        color: abstracts.$color-rose-800;
+      }
+    }
+  }
+
+  &__label {
+    @include abstracts.text-preset-4-bold;
+  }
+}
