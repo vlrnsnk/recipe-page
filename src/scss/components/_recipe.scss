@@ -92,7 +92,25 @@
     }
 
     &--ordered {
-      list-style-type: decimal;
+      counter-reset: recipe-counter;
+    }
+
+    &--ordered &-item {
+      align-items: flex-start;
+
+      &::before {
+        counter-increment: recipe-counter;
+        content: counter(recipe-counter) '.';
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        border-radius: 0;
+        color: abstracts.$color-rose-800;
+
+        // might need to adjust for pixel perfect margin-right: 19px;
+
+        @include abstracts.text-preset-4-bold;
+      }
     }
   }
 
