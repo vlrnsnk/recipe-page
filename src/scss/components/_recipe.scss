@@ -39,11 +39,14 @@
 
   &__section {
     margin-bottom: abstracts.$spacing-400;
+    border-bottom: 1px solid abstracts.$color-stone-150;
+    padding-bottom: abstracts.$spacing-400;
 
     &-title {
       @include abstracts.text-preset-2;
 
       color: abstracts.$color-brown-800;
+      margin-bottom: abstracts.$spacing-300;
 
       &--highlight {
         @include abstracts.text-preset-3;
@@ -56,6 +59,7 @@
     &--highlight {
       padding: abstracts.$spacing-300;
       background-color: abstracts.$color-rose-50;
+      border-bottom: none;
     }
   }
 
@@ -64,17 +68,31 @@
     flex-direction: column;
     gap: abstracts.$spacing-100;
     color: abstracts.$color-stone-600;
-    list-style-position: outside;
-    padding-left: abstracts.$spacing-300;
+    list-style-type: none;
 
     &-item {
+      display: flex;
+      align-items: center;
+
       @include abstracts.text-preset-4;
 
-      padding-left: abstracts.$spacing-200;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: abstracts.$spacing-50;
+        height: abstracts.$spacing-50;
+        flex-shrink: 0;
+        background-color: abstracts.$color-rose-800;
+        border-radius: 50%;
+        margin-left: abstracts.$spacing-100;
 
-      &::marker {
-        color: abstracts.$color-rose-800;
+        // might need to adjust to 28px for pixel perfect
+        margin-right: abstracts.$spacing-300;
       }
+    }
+
+    &--ordered {
+      list-style-type: decimal;
     }
   }
 
