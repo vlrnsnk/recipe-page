@@ -63,6 +63,11 @@
     }
   }
 
+  &__section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -116,5 +121,46 @@
 
   &__label {
     @include abstracts.text-preset-4-bold;
+  }
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    @include abstracts.text-preset-4;
+
+    &-caption {
+      text-align: left;
+      margin-bottom: abstracts.$spacing-300;
+    }
+
+    &-row {
+      display: flex;
+      padding: 0 abstracts.$spacing-400;
+      gap: abstracts.$spacing-200;
+    }
+
+    &-row:not(:last-child) {
+      border-bottom: 1px solid abstracts.$color-stone-150;
+      padding-bottom: abstracts.$spacing-150;
+    }
+
+    &-row:not(:first-child) {
+      padding-top: abstracts.$spacing-150;
+    }
+
+    &-header {
+      flex: 1;
+      text-align: left;
+
+      @include abstracts.text-preset-4;
+    }
+
+    &-value {
+      flex: 1;
+      color: abstracts.$color-brown-800;
+
+      @include abstracts.text-preset-4-bold;
+    }
   }
 }
