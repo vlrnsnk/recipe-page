@@ -10,7 +10,8 @@
   }
 
   &__image-wrapper {
-    margin: 0 - abstracts.$spacing-500 0 - abstracts.$spacing-400 abstracts.$spacing-500;
+    margin: calc(-1 * abstracts.$spacing-500) calc(-1 * abstracts.$spacing-400)
+      abstracts.$spacing-500;
   }
 
   &__image {
