@@ -10,9 +10,7 @@
   }
 
   &__image-wrapper {
-    /* stylelint-disable-next-line scss/operator-no-newline-after */
-    margin: 0 - abstracts.$spacing-500 0 - abstracts.$spacing-400 abstracts.$spacing-500 0 -
-      abstracts.$spacing-400;
+    margin: 0 - abstracts.$spacing-500 0 - abstracts.$spacing-400 abstracts.$spacing-500;
   }
 
   &__image {
