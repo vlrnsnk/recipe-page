@@ -26,11 +26,18 @@ Frontend Mentor challenges help improve frontend skills by building realistic UI
 
 ### The challenge
 
-- Focus on semantic HTML
+- Build out a recipe page and get it looking as close to the design as possible
+- Focus on semantic HTML structure
 
 ### Preview
 
-![](./preview.png)
+<details>
+  <summary>Click to expand website preview</summary>
+  <br>
+  <p align="center">
+    <img src="./preview.png" alt="website preview" width="894" style="max-width: 100%; height: auto;">
+  </p>
+</details>
 
 ### Links
 
@@ -53,7 +60,7 @@ Frontend Mentor challenges help improve frontend skills by building realistic UI
 - Semantic HTML5 markup
 - SCSS (modular architecture: abstracts, base, components, layout)
 - CSS custom properties (design tokens via SCSS variables)
-- Flexbox / Grid
+- Flexbox
 - Mobile-first workflow
 - Vite
 - Stylelint (code quality + property ordering)
@@ -62,9 +69,11 @@ Frontend Mentor challenges help improve frontend skills by building realistic UI
 
 ### What I learned
 
-- {{LEARNING_1}}
-- {{LEARNING_2}}
-- {{LEARNING_3}}
+- BEM methodology and when to use blocks vs elements vs modifiers
+- How CSS custom properties and SCSS variables work together
+- Why unitless line-height is preferred over percentages
+- Using ::before with counters for styled ordered lists
+- Mobile-first responsive workflow with logical CSS properties
 
 ## Setup
 
@@ -112,10 +121,10 @@ Project is built with Vite and deployed to GitHub Pages using GitHub Actions.
 
 Lighthouse score (example):
 
-- Performance: {{PERF_SCORE}}
-- Accessibility: {{ACCESSIBILITY_SCORE}}
-- Best Practices: {{BEST_PRACTICES_SCORE}}
-- SEO: {{SEO_SCORE}}
+- Performance: 100
+- Accessibility: 100
+- Best Practices: 100
+- SEO: 100
 
 ## Author
 
