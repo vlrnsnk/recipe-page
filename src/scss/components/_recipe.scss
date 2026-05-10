@@ -132,31 +132,39 @@
     }
 
     &-row {
-      display: flex;
-      padding: 0 abstracts.$spacing-400;
-      gap: abstracts.$spacing-200;
       color: abstracts.$color-stone-600;
+    }
+
+    &-row:first-child &-header,
+    &-row:first-child &-value {
+      padding-top: 0;
+    }
+
+    &-row:last-child &-header,
+    &-row:last-child &-value {
+      padding-bottom: 0;
     }
 
     &-row:not(:last-child) {
       border-bottom: 1px solid abstracts.$color-stone-150;
-      padding-bottom: abstracts.$spacing-150;
     }
 
-    &-row:not(:first-child) {
-      padding-top: abstracts.$spacing-150;
+    &-header,
+    &-value {
+      width: 50%;
+      padding-block: abstracts.$spacing-150;
     }
 
     &-header {
-      flex: 1;
       text-align: left;
+      padding-left: abstracts.$spacing-400;
 
       @include abstracts.text-preset-4;
     }
 
     &-value {
-      flex: 1;
       color: abstracts.$color-brown-800;
+      padding-left: abstracts.$spacing-100;
 
       @include abstracts.text-preset-4-bold;
     }
